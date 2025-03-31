@@ -1,5 +1,5 @@
 <?php
-/*
+
 $db = mysqli_connect(
     $_ENV['DB_HOST'] ?? '',
     $_ENV['DB_USER'] ?? '', 
@@ -13,4 +13,3 @@ if (!$db) {
     echo "error de depuración: " . mysqli_connect_error();
     exit;
 }
-    */

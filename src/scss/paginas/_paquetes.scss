@@ -1,0 +1,57 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.paquetes {
+
+    &__grid {
+        @include m.contenedor;
+        @include m.grid(1, 3rem);
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+            align-items: flex-start;
+        }
+    }
+
+    &__submit {
+        margin-top: 3rem;
+        @include m.boton(v.$azul, v.$blanco);
+    }
+}
+
+.paquete {
+    @include m.card;
+
+    &__lista {
+        @include m.reset-lista;
+        line-height: 2;
+    }
+
+    &__precio {
+        font-size: 6rem;
+        margin: 3rem 0;
+        color: v.$azul;
+        font-weight: v.$black;
+        text-align: center;
+    }
+
+    &__contenedor-info {
+        padding: 3rem;
+    }
+
+    &__elemento {
+
+        &--margin {
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+    &__elemento-nombre {
+        font-weight: v.$bold;
+        color: v.$gris-oscuro;
+
+        &--regular {
+            font-weight: v.$regular;
+        }
+    }
+}

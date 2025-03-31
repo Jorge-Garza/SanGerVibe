@@ -12,4 +12,4 @@ require 'funciones.php';
 require 'database.php';
 
 // Conectarnos a la base de datos
-// ActiveRecord::setDB($db);
+ActiveRecord::setDB($db);
