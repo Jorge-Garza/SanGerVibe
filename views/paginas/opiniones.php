@@ -3,87 +3,49 @@
     <p class="opiniones__descripcion">Conoce la opinión de nuestros clientes</p>
 
     <div class="comentarios">
-        <div class="comentarios__listado">
-            <div>
-                <div class="comentario">
-                    <p class="comentario__fecha">25 Marzo 2025</p>
-    
-                    <div class="comentario__informacion">
-                        <h4 class="comentario__clasificacion">Calificación General del Servicio</h4>
-    
-                        <div>
-                            <p class="comentario__comentario-autor">
-                                Las aguas termales fueron increíblemente relajantes, me sentí renovado/a después de la experiencia.
-                            </p>
-                        </div>
-                        
-                        <div class="comentario__autor-info">
-                            <picture>
-                                <!-- <source srcset="img/speakers/6ef7ce7849c1b409ff52bbf6dac4c610.png' ?>" type="image/png"> -->
-                                <img class="comentario__imagen-autor" loading="lazy" width="200" height="300" src="build/img/speakers/2a41a781d8ae8f0f7a1969c766276b08.png" alt="Imagen Usuario">
-                                
-                            </picture>
-    
-                            <p class="comentario__autor-nombre">Mauricio Rodriguez</p>
+        <div class="comentarios__listado slider swiper">
+            <div class="swiper-wrapper">
+                <?php foreach($opinionesUsuarios as $opinionUsuario) { ?>
+                    <div class="comentario swiper-slide">
+                        <p class="comentario__fecha"><?php echo $opinionUsuario->fecha ?></p>
+        
+                        <div class="comentario__informacion">
+                            <h4 class="comentario__clasificacion"><?php echo $opinionUsuario->clasificacion ?></h4>
+        
+                            <div>
+                                <p class="comentario__comentario-autor">
+                                    <?php echo $opinionUsuario->opinion ?>
+                                </p>
+                            </div>
+                            
+                            <div class="comentario__autor-info">
+                                <picture>
+                                    <!-- <source srcset="img/speakers/6ef7ce7849c1b409ff52bbf6dac4c610.png' ?>" type="image/png"> -->
+                                    <img class="comentario__imagen-autor" loading="lazy" width="200" height="300" src="img/usuarios/<?php echo $opinionUsuario->imagen; ?>.png" alt="Imagen Usuario">
+                                    
+                                </picture>
+        
+                                <p class="comentario__autor-nombre"><?php echo $opinionUsuario->nombre . " " . $opinionUsuario->apellido ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
+            </div> <!-- swiper-wrapper -->
 
-                <div class="comentario">
-                    <p class="comentario__fecha">26 Marzo 2025</p>
-    
-                    <div class="comentario__informacion">
-                        <h4 class="comentario__clasificacion">Calificación de las Aguas Termales</h4>
-    
-                        <div>
-                            <p class="comentario__comentario-autor">
-                                Un lugar perfecto para desconectar y disfrutar de un baño termal. Muy recomendable para aliviar el estrés.
-                            </p>
-                        </div>
-                        
-                        <div class="comentario__autor-info">
-                            <picture>
-                                <!-- <source srcset="img/speakers/6ef7ce7849c1b409ff52bbf6dac4c610.png' ?>" type="image/png"> -->
-                                <img class="comentario__imagen-autor" loading="lazy" width="200" height="300" src="build/img/speakers/c0ff09fe88897bb9201bc2fce1b04d28.png" alt="Imagen Usuario">
-                                
-                            </picture>
-    
-                            <p class="comentario__autor-nombre">Roberto Villegas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="comentario">
-                    <p class="comentario__fecha">27 Marzo 2025</p>
-    
-                    <div class="comentario__informacion">
-                        <h4 class="comentario__clasificacion">Kits de Relajación</h4>
-    
-                        <div>
-                            <p class="comentario__comentario-autor">
-                            Los kits de relajación son geniales, tienen todo lo que necesitas para una experiencia completa de bienestar.
-                            </p>
-                        </div>
-                        
-                        <div class="comentario__autor-info">
-                            <picture>
-                                <!-- <source srcset="img/speakers/6ef7ce7849c1b409ff52bbf6dac4c610.png' ?>" type="image/png"> -->
-                                <img class="comentario__imagen-autor" loading="lazy" width="200" height="300" src="build/img/speakers/55c7866df31370ec3299eed6eb63daa1.png" alt="Imagen Usuario">
-                                
-                            </picture>
-    
-                            <p class="comentario__autor-nombre">Alejandra Sanchez</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
-    <h2 class="formulario__heading">¿Quieres compartir tu experiencia en SanGerVibe?</h2>
+    <h2 class="formulario__heading"><?php echo $tituloFormulario; ?></h2>
 
     <div class="auth">
-        <form method="POST" action="/registro" class="formulario">
+        
+        <?php 
+            include_once(__DIR__ . '/../templates/alertas.php');
+        ?>
+
+        <form method="POST" action="/opiniones" enctype="multipart/form-data" class="formulario">
             <div class="formulario__campo">
                 <label for="nombre" class="formulario__label">Nombre</label>
                 <input 
@@ -92,6 +54,7 @@
                     placeholder="Tu Nombre"
                     id="nombre"
                     name="nombre"
+                    value="<?php echo $opinion->nombre ?? ''; ?>"
                 >
             </div>
 
@@ -103,6 +66,7 @@
                     placeholder="Tu Apellido"
                     id="apellido"
                     name="apellido"
+                    value="<?php echo $opinion->apellido ?? ''; ?>"
                 >
             </div>
 
@@ -110,7 +74,7 @@
                 <label for="imagen" class="formulario__label">Adjuntar Imagen</label>
                 <input 
                     type="file"
-                    class="formulario__input"
+                    class="formulario__input formulario__input--file"
                     id="imagen"
                     name="imagen"
                     accept="image/*"  
@@ -118,12 +82,34 @@
             </div>
 
             <div class="formulario__campo">
-                <label for="comentario" class="formulario__label">Comentario</label>
+                <label for="clasificacion" class="formulario__label">Clasificación del Servicio</label>
+                <select 
+                    class="formulario__input"
+                    id="clasificacion"
+                    name="clasificacion"
+                >
+                    <option value="Calificación General del Servicio">Calificación General del Servicio</option>
+                    <option value="Calificación de las Aguas Termales">Calificación de las Aguas Termales</option>
+                    <option value="Kits de Relajación">Kits de Relajación</option>
+                    <option value="Servicio y Atención al Cliente">Servicio y Atención al Cliente</option>
+                    <option value="Facilidades e Instalaciones">Facilidades e Instalaciones</option>
+                    <option value="Ambiente y Ambiente Relajante">Ambiente y Ambiente Relajante</option>
+                    <option value="Ubicación y Accesibilidad">Ubicación y Accesibilidad</option>
+                    <option value="Relación Calidad-Precio">Relación Calidad-Precio</option>
+                    <option value="Experiencia General">Experiencia General</option>
+                    <option value="Limpieza y Mantenimiento">Limpieza y Mantenimiento</option>
+                    <option value="Seguridad">Seguridad</option>
+                </select>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="opinion" class="formulario__label">Comentario</label>
                 <textarea 
                     class="formulario__input"
                     placeholder="Escribe tu comentario"
-                    id="comentario"
-                    name="comentario"
+                    id="opinion"
+                    name="opinion"
+                    value="<?php echo $opinion->opinion ?? ''; ?>"
                 ></textarea>
 
             <input type="submit" class="formulario__submit" value="Enviar">

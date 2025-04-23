@@ -22,6 +22,10 @@
         padding: 1rem;
         border: 1px solid v.$gris;
         border-radius: .5rem;
+
+        &--file {
+            border: none
+        }
     }
 
     &__submit {

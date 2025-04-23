@@ -57,4 +57,7 @@ $router->get('/sangervibe', [PaginasController::class, 'negocio']);
 $router->get('/paquetes', [PaginasController::class, 'paquetes']);
 $router->get('/opiniones', [PaginasController::class, 'opiniones']);
 
+// Registro opiniones
+$router->post('/opiniones', [PaginasController::class, 'opiniones']);
+
 $router->comprobarRutas();

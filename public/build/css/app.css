@@ -460,6 +460,14 @@ h3 {
   width: min(95%, 140rem);
   margin: 0 auto;
 }
+.opiniones__descripcion {
+  margin: 0;
+}
+
+.comentarios .swiper-button-next,
+.comentarios .swiper-button-prev {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .comentario {
   margin-top: 7.5rem;
@@ -477,6 +485,14 @@ h3 {
 .comentario__informacion:hover {
   background-color: rgb(0, 98.8729508197, 193);
 }
+.comentario__clasificacion {
+  font-size: 2rem;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .comentario__autor-info {
   display: flex;
   gap: 2rem;
@@ -490,6 +506,12 @@ h3 {
 }
 .comentario__autor-nombre {
   font-weight: 700;
+}
+.comentario__comentario-autor {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .formulario {
@@ -511,6 +533,9 @@ h3 {
   padding: 1rem;
   border: 1px solid #64748B;
   border-radius: 0.5rem;
+}
+.formulario__input--file {
+  border: none;
 }
 .formulario__submit {
   background-color: #007df4;

@@ -4,10 +4,17 @@
 .opiniones {
     padding: 5rem 0;
     @include m.contenedor;
+
+    &__descripcion {
+        margin: 0;
+    }
 }
 
 .comentarios {
-
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: rgba(v.$blanco, .5);
+    }
 }
 
 .comentario {
@@ -29,6 +36,15 @@
         }
     }
 
+    &__clasificacion {
+        font-size: 2rem;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
     &__autor-info {
         display: flex;
         gap: 2rem;
@@ -44,5 +60,12 @@
 
     &__autor-nombre {
         font-weight: v.$bold;
+    }
+
+    &__comentario-autor {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
