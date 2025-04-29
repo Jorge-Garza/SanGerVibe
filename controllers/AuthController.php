@@ -4,6 +4,7 @@ namespace Controllers;
 
 use Classes\Email;
 use Model\Usuario;
+use Model\Registro;
 use MVC\Router;
 
 class AuthController {
@@ -38,7 +39,14 @@ class AuthController {
                         if ($usuario->admin) {
                             header('Location: /admin/dashboard');
                         } else {
-                            header('Location: /finalizar-registro');
+                            // Verificar si el usuario ya compro un paquete
+                            $registro = Registro::where('usuario_id', $_SESSION['id']);
+                            // debuguear($registro);
+                            if (!$registro) {
+                                header('Location: /finalizar-registro');
+                            } else {
+                                header('Location: /boleto?id=' . urldecode($registro->token));
+                            }
                         }
                         
                     } else {

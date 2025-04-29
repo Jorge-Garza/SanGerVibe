@@ -5,9 +5,8 @@
     <div class="sangervibe__grid">
         <div class="sangervibe__imagen">
             <picture>
-                <!--
-                <source srcset="build/img/sobre_devwebcamp.avif" type="image/avif">
-                <source srcset="build/img/sobre_devwebcamp.webp" type="image/webp">-->
+                <source srcset="build/img/aguasTermales.avif" type="image/avif">
+                <source srcset="build/img/aguasTermales.webp" type="image/webp">
                 <img loading="lazy" width="200" height="300" src="build/img/aguasTermales.jpeg" alt="Imagen SanGerVibe">
             </picture>
         </div>

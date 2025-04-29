@@ -6,13 +6,11 @@
         <div class="sangervibe__grid">
             <div class="sangervibe__imagen">
                 <picture>
-                    <!--
-                    <source srcset="build/img/sobre_devwebcamp.avif" type="image/avif">
-                    <source srcset="build/img/sobre_devwebcamp.webp" type="image/webp">-->
+                    <source srcset="build/img/paquetes.avif" type="image/avif">
+                    <source srcset="build/img/paquetes.webp" type="image/webp">
                     <img loading="lazy" style="max-width: 450px; max-height: 450px; display: block; margin: 0 auto;" src="build/img/paquetes.png" alt="Imagen SanGerVibe">
                 </picture>
             </div>
-    
             <div class="sangervibe__contenido">
                 <h3>Reserva especial</h3>
                 <p class="sangervibe__texto">
@@ -26,9 +24,31 @@
 
     <div class="paquetes__grid">
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitBasico.png" alt="Imagen Kit Basico">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitbasico/basico1.avif" type="image/avif">
+                            <source srcset="build/img/kitbasico/basico1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitbasico/basico1.png" alt="Imagen Kit Básico Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitbasico/basico2.avif" type="image/avif">
+                            <source srcset="build/img/kitbasico/basico2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitbasico/basico2.png" alt="Imagen Kit Básico Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitbasico/basico3.avif" type="image/avif">
+                            <source srcset="build/img/kitbasico/basico3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitbasico/basico3.png" alt="Imagen Kit Básico Alternativa">
+                        </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Básico</h3>
                 <ul class="paquete__lista">
@@ -46,14 +66,36 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$3.99</p>
+                <p class="paquete__precio">$15.42</p>
             </div>
         </div>
 
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitIntermedio.png" alt="Imagen Kit Intermedio">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio1.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio2.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio3.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Intermedio</h3>
                 <ul class="paquete__lista">
@@ -74,14 +116,36 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$5.96</p>
+                <p class="paquete__precio">$24.64</p>
             </div>
         </div>
 
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitAvanzado.png" alt="Imagen Kit Intermedio">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado1.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado1.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado2.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado2.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado3.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado3.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Avanzado</h3>
                 <ul class="paquete__lista">
@@ -99,7 +163,7 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$8.94</p>
+                <p class="paquete__precio">$29.48</p>
             </div>
         </div>
     </div>

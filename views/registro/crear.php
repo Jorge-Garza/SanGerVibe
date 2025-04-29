@@ -6,9 +6,8 @@
         <div class="sangervibe__grid">
             <div class="sangervibe__imagen">
                 <picture>
-                    <!--
-                    <source srcset="build/img/sobre_devwebcamp.avif" type="image/avif">
-                    <source srcset="build/img/sobre_devwebcamp.webp" type="image/webp">-->
+                    <source srcset="build/img/paquetes.avif" type="image/avif">
+                    <source srcset="build/img/paquetes.webp" type="image/webp">
                     <img loading="lazy" style="max-width: 450px; max-height: 450px; display: block; margin: 0 auto;" src="build/img/paquetes.png" alt="Imagen SanGerVibe">
                 </picture>
             </div>
@@ -26,9 +25,31 @@
 
     <div class="paquetes__grid">
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitBasico.png" alt="Imagen Kit Basico">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitbasico/basico1.avif" type="image/avif">
+                            <source srcset="build/img/kitbasico/basico1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitbasico/basico1.png" alt="Imagen Kit Básico Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitbasico/basico2.avif" type="image/avif">
+                            <source srcset="build/img/kitbasico/basico2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitbasico/basico2.png" alt="Imagen Kit Básico Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="build/img/kitbasico/basico3.avif" type="image/avif">
+                        <source srcset="build/img/kitbasico/basico3.webp" type="image/webp">
+                        <img loading="lazy" width="200" src="build/img/kitbasico/basico3.png" alt="Imagen Kit Básico Alternativa">
+                    </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Básico</h3>
                 <ul class="paquete__lista">
@@ -46,22 +67,13 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$3.99</p>
-
-                <div id="paypal-container-N5BLWX2CDBSWJ"></div>
-                <script>
-                paypal.HostedButtons({
-                    hostedButtonId: "N5BLWX2CDBSWJ",
-                }).render("#paypal-container-N5BLWX2CDBSWJ")
-                </script>
+                <p class="paquete__precio">$15.42</p>
                 
-                <!--
                 <div id="smart-button-container">
                     <div style="text-align: center;">
-                        <div id="paypal-button-container"></div>
+                        <div id="paypal-button-container-kitbasico"></div>
                     </div>
                 </div>
-            -->
             
                 <div class="descarga">
                     <a href="ruta-del-archivo" download="nombre-del-archivo" class="boton-descarga">
@@ -76,9 +88,31 @@
         </div>
 
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitIntermedio.png" alt="Imagen Kit Intermedio">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio1.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio2.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitintermedio/intermedio3.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/intermedio3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
+                        </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Intermedio</h3>
                 <ul class="paquete__lista">
@@ -99,23 +133,15 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$5.96</p>
+                <p class="paquete__precio">$24.64</p>
 
-                <div id="paypal-container-ADUG5WEDCZ2SE"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "ADUG5WEDCZ2SE",
-  }).render("#paypal-container-ADUG5WEDCZ2SE")
-</script>
-                <!--
                 <div id="smart-button-container">
                     <div style="text-align: center;">
-                        <div id="paypal-button-container"></div>
+                        <div id="paypal-button-container-kitintermedio"></div>
                     </div>
                 </div>
-            -->
 
-            <div class="descarga">
+                <div class="descarga">
                     <a href="ruta-del-archivo" download="nombre-del-archivo" class="boton-descarga">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                             <path d="M10 2l-.15 .005a2 2 0 0 0 -1.85 1.995v6.999l-2.586 .001a2 2 0 0 0 -1.414 3.414l6.586 6.586a2 2 0 0 0 2.828 0l6.586 -6.586a2 2 0 0 0 .434 -2.18l-.068 -.145a2 2 0 0 0 -1.78 -1.089l-2.586 -.001v-6.999a2 2 0 0 0 -2 -2h-4z"></path>
@@ -127,9 +153,31 @@
         </div>
 
         <div class="paquete">
-            <picture>
-                <img loading="lazy" width="200" src="build/img/kitAvanzado.png" alt="Imagen Kit Intermedio">
-            </picture>
+            <div class="swiper paquete__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado1.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado1.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado2.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado2.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="build/img/kitavanzado/avanzado3.avif" type="image/avif">
+                            <source srcset="build/img/kitavanzado/avanzado3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitavanzado/avanzado3.png" alt="Imagen Kit Avanzado Alternativa">
+                        </picture>
+                    </div>
+                </div>
+            </div>
             <div class="paquete__contenedor-info">
                 <h3 class="paquete__nombre">Kit Avanzado</h3>
                 <ul class="paquete__lista">
@@ -147,16 +195,15 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$8.94</p>
+                <p class="paquete__precio">$29.48</p>
 
-                <div id="paypal-container-VQN2W9NMU2QHW"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "VQN2W9NMU2QHW",
-  }).render("#paypal-container-VQN2W9NMU2QHW")
-</script>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                        <div id="paypal-button-container-kitavanzado"></div>
+                    </div>
+                </div>
 
-<div class="descarga">
+                <div class="descarga">
                     <a href="ruta-del-archivo" download="nombre-del-archivo" class="boton-descarga">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                             <path d="M10 2l-.15 .005a2 2 0 0 0 -1.85 1.995v6.999l-2.586 .001a2 2 0 0 0 -1.414 3.414l6.586 6.586a2 2 0 0 0 2.828 0l6.586 -6.586a2 2 0 0 0 .434 -2.18l-.068 -.145a2 2 0 0 0 -1.78 -1.089l-2.586 -.001v-6.999a2 2 0 0 0 -2 -2h-4z"></path>
@@ -168,10 +215,6 @@
         </div>
     </div>
 </main>
-
-<script 
-  src="https://www.paypal.com/sdk/js?client-id=ASVpC_uwgL3TZdMPIdASvr65g9zLMs6AKnkX2s2kBSSdwOT&components=hosted-buttons&disable-funding=venmo&currency=USD">
-</script>
 
 <style>
 
@@ -217,9 +260,6 @@
 }
 </style>
 
-
-
-<!--
 <script src="https://www.paypal.com/sdk/js?client-id=ASVpC_uwgL3TZdMPIdASvr65g9zLMs6AKnkX2s2kBSSdwOT-WKLYi6nuWYpMtivIa3r3XI_x9gKgYmzA&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
  
 <script>
@@ -234,7 +274,7 @@
  
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"1","amount":{"currency_code":"USD","value":.99}}]
+            purchase_units: [{"description":"1","amount":{"currency_code":"USD","value":15.42}}]
           });
         },
  
@@ -251,7 +291,11 @@
             })
             .then( respuesta => respuesta.json())
             .then( resultado => {
-                console.log(resultado);
+                if (resultado.resultado) {
+                    console.log(resultado);
+                    const url = `/boleto?id=${resultado.token}`; // suponiendo que el servidor te manda el token o ID
+                    window.location.href = url; // 🔥 Aquí rediriges a la vista HTML
+                }
             })
           });
         },
@@ -259,9 +303,90 @@
         onError: function(err) {
           console.log(err);
         }
-      }).render('#paypal-button-container');
-    }
+      }).render('#paypal-button-container-kitbasico');
+
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'pay',
+        },
  
-  initPayPalButton();
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"2","amount":{"currency_code":"USD","value":24.64}}]
+          });
+        },
+ 
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+ 
+            const datos = new FormData();
+            datos.append('paquete_id', orderData.purchase_units[0].description);
+            datos.append('pago_id', orderData.purchase_units[0].payments.captures[0].id);
+
+            fetch('/finalizar-registro/pagar', {
+                method: 'POST',
+                body: datos
+            })
+            .then( respuesta => respuesta.json())
+            .then( resultado => {
+                if (resultado.resultado) {
+                    console.log(resultado);
+                    const url = `/boleto?id=${resultado.token}`; // suponiendo que el servidor te manda el token o ID
+                    window.location.href = url; // 🔥 Aquí rediriges a la vista HTML
+                }
+            })
+          });
+        },
+ 
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container-kitintermedio');
+
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'pay',
+        },
+ 
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"3","amount":{"currency_code":"USD","value":29.48}}]
+          });
+        },
+ 
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+ 
+            const datos = new FormData();
+            datos.append('paquete_id', orderData.purchase_units[0].description);
+            datos.append('pago_id', orderData.purchase_units[0].payments.captures[0].id);
+
+            fetch('/finalizar-registro/pagar', {
+                method: 'POST',
+                body: datos
+            })
+            .then( respuesta => respuesta.json())
+            .then( resultado => {
+                if (resultado.resultado) {
+                    console.log(resultado);
+                    const url = `/boleto?id=${resultado.token}`; // suponiendo que el servidor te manda el token o ID
+                    window.location.href = url; // 🔥 Aquí rediriges a la vista HTML
+                }
+            })
+          });
+        },
+ 
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container-kitavanzado');
+
+    }
+    initPayPalButton();
 </script> 
-                -->

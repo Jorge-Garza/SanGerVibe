@@ -16,7 +16,6 @@
     }
 
     &__logo {
-        width: 10rem;
         @include m.logo;
         @include m.texto-fluido(2rem, 3rem);
     }

@@ -3,14 +3,14 @@
 
 .header {
     min-height: 50rem;
-    background-image: // url(../img/grafico.svg), 
-                      // url(../img/grafico.svg), 
-                      // linear-gradient(to right, rgba(v.$negro, 1), rgba(v.$negro, .5)), 
-                      // image-set(url(../img/header.jpg) 1x);
-                      image-set(url(../img/baner.jpeg) 1x);
-                      background-repeat: no-repeat;
-                      background-size: cover;
-                      background-position: center;
+    background-image: image-set(
+        url('../img/baner.avif') type('image/avif'),
+        url('../img/baner.webp') type('image/webp'),
+        url('../img/baner.jpeg') type('image/jpeg')
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
         
     &__contenedor {
         @include m.contenedor;
@@ -40,7 +40,6 @@
     &__logo {
         @include m.texto-fluido(2rem, 8rem);
         @include m.texto-degradado(v.$azul, v.$secundario);
-
         text-align: center;
 
         @include m.tablet {
@@ -50,7 +49,7 @@
     }
 
     &__texto {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: v.$bold;
         color: v.$blanco;
         margin: 2rem 0;
@@ -58,6 +57,7 @@
         text-transform: uppercase;
         @include m.tablet {
             text-align: left;
+            font-size: 3rem;
         }
 
         &--modalidad {

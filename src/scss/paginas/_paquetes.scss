@@ -2,7 +2,6 @@
 @use 'base/variables' as v;
 
 .paquetes {
-
     &__grid {
         @include m.contenedor;
         @include m.grid(1, 3rem);
@@ -19,7 +18,7 @@
 }
 
 .paquete {
-    @include m.card;
+    @include m.card;  
 
     &__lista {
         @include m.reset-lista;
