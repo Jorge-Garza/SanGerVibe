@@ -75,23 +75,23 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio1.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio1.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio1.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio2.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio2.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio2.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio3.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio3.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio3.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                 </div>
