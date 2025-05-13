@@ -3,14 +3,17 @@
 
 .header {
     min-height: 50rem;
+    background-color: #007df4;
+    /*
     background-image: image-set(
         url('../img/baner.avif') type('image/avif'),
         url('../img/baner.webp') type('image/webp'),
         url('../img/baner.jpeg') type('image/jpeg')
     );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    */
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    // background-position: center;
         
     &__contenedor {
         @include m.contenedor;
@@ -38,8 +41,9 @@
     }
 
     &__logo {
-        @include m.texto-fluido(2rem, 8rem);
-        @include m.texto-degradado(v.$azul, v.$secundario);
+        @include m.texto-fluido(4rem, 8rem);
+        // @include m.texto-degradado(v.$blanco, v.$secundario);
+        color: v.$secundario;
         text-align: center;
 
         @include m.tablet {

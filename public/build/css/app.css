@@ -696,10 +696,14 @@ h3 {
 
 .header {
   min-height: 50rem;
-  background-image: image-set(url("../img/baner.avif") type("image/avif"), url("../img/baner.webp") type("image/webp"), url("../img/baner.jpeg") type("image/jpeg"));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #007df4;
+  /*
+  background-image: image-set(
+      url('../img/baner.avif') type('image/avif'),
+      url('../img/baner.webp') type('image/webp'),
+      url('../img/baner.jpeg') type('image/jpeg')
+  );
+  */
 }
 .header__contenedor {
   width: min(95%, 140rem);
@@ -736,10 +740,8 @@ h3 {
   }
 }
 .header__logo {
-  font-size: clamp(2rem, -0.8rem + 10vw, 8rem);
-  background: linear-gradient(to right, #007df4, #00c8c2);
-  background-clip: text;
-  color: transparent;
+  font-size: clamp(4rem, -0.8rem + 10vw, 8rem);
+  color: #00c8c2;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -791,7 +793,7 @@ h3 {
 }
 
 .barra {
-  background-color: #007df4;
+  background-color: #0052a3;
 }
 .barra__contenido {
   width: min(95%, 140rem);
