@@ -67,7 +67,7 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$15.42</p>
+                <p class="paquete__precio">$15.42 <span class="paquete__moneda">USD</span></p>
                 
                 <div id="smart-button-container">
                     <div style="text-align: center;">
@@ -92,23 +92,23 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio1.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio1.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio1.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio1.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio1.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio2.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio2.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio2.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio2.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio2.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="build/img/kitintermedio/intermedio3.avif" type="image/avif">
-                            <source srcset="build/img/kitintermedio/intermedio3.webp" type="image/webp">
-                            <img loading="lazy" width="200" src="build/img/kitintermedio/intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
+                            <source srcset="build/img/kitintermedio/Intermedio3.avif" type="image/avif">
+                            <source srcset="build/img/kitintermedio/Intermedio3.webp" type="image/webp">
+                            <img loading="lazy" width="200" src="build/img/kitintermedio/Intermedio3.png" alt="Imagen Kit Intermedio Alternativa">
                         </picture>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$24.64</p>
+                <p class="paquete__precio">$24.64 <span class="paquete__moneda">USD</span></p>
 
                 <div id="smart-button-container">
                     <div style="text-align: center;">
@@ -195,7 +195,7 @@
                     </li>
                 </ul>
     
-                <p class="paquete__precio">$29.48</p>
+                <p class="paquete__precio">$29.48 <span class="paquete__moneda">USD</span></p>
 
                 <div id="smart-button-container">
                     <div style="text-align: center;">

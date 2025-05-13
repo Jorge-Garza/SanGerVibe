@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // NUEVO: inicializar Swipers en cada paquete
-    const swipersPaquetes = document.querySelectorAll('.paquete__swiper');
+    const swipersPaquetes = document.querySelectorAll('.paquete__swiper, .sangervibe__swiper');
     swipersPaquetes.forEach((swiperContainer) => {
         new Swiper(swiperContainer, {
             modules: [Autoplay],

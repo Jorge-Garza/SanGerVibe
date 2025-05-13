@@ -357,7 +357,7 @@ h3 {
 
 [class$=__descripcion] {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #1E293B;
   margin-bottom: 5rem;
@@ -380,11 +380,61 @@ h3 {
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: auto auto;
     align-items: center;
   }
 }
+.sangervibe__contenido {
+  background-color: #f7f7f7;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.sangervibe__swiper {
+  aspect-ratio: 3/4;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.sangervibe .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sangervibe__picture {
+  width: 100%;
+  height: 100%;
+}
+.sangervibe__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .sangervibe__texto {
+  font-size: 2rem;
   line-height: 2;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .sangervibe__texto {
+    font-size: 2.8rem;
+  }
+}
+.sangervibe__titulo {
+  font-size: 3rem;
+  color: #007df4;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-left: 5px solid #007df4;
+  padding-left: 1rem;
+}
+@media (min-width: 768px) {
+  .sangervibe__titulo {
+    font-size: 3.5rem;
+  }
 }
 
 .paquetes__grid {
@@ -441,6 +491,11 @@ h3 {
   color: #007df4;
   font-weight: 900;
   text-align: center;
+}
+.paquete__moneda {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #64748B;
 }
 .paquete__contenedor-info {
   padding: 3rem;

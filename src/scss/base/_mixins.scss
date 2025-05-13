@@ -48,6 +48,16 @@
     grid-template-columns: repeat($columnas, minmax(250px, 1fr));
 }
 
+@mixin grid-col-row($columnas, $espaciado, $filas: null) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, minmax(250px, 1fr));
+  
+    @if $filas != null {
+      grid-template-rows: $filas;
+    }
+}
+
 @mixin contenedor {
     width: min(95%, 140rem);
     margin: 0 auto;
@@ -72,7 +82,7 @@
 
 @mixin descripcion-pagina {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: v.$delgada;
     color: v.$gris-oscuro;
     margin-bottom: 5rem;
